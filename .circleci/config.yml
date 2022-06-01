@@ -22,4 +22,4 @@ jobs: # a collection of steps
           command: snyk auth $SNYK_TOKEN
       - run: # run snyk test - run snyk monitor
           name: snyk monitor
-          command: snyk monitor
+          command: snyk monitor # this is the only way to pass CircleCI build
